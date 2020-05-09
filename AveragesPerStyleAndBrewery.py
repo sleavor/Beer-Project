@@ -48,12 +48,12 @@ for style in styleRatings:
 #Averages Per Brewery
 for brewery in df['brewery']:
     if brewery not in allBreweries:
-        allBreweries.append(style)
+        allBreweries.append(brewery)
 
 breweryRatings = {}
 
 for brewery in allBreweries:
-    newdf = df[df['brewery'].str.contains(style)]
+    newdf = df[df['brewery'].str.contains(brewery)]
     aCount = 0 
     sumRate = 0
     for rating in newdf['rating']:
