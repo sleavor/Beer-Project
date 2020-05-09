@@ -1,0 +1,10 @@
+scrapy
+pandas
+matplotlib
+numpy
+missingno
+selenium
+bs4
+time
+urllib
+random
